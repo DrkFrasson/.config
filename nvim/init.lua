@@ -1,0 +1,14 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+vim.opt.linebreak = true
+
+vim.opt.cursorline = true
+
+vim.opt.scrolloff = 10 
+
+vim.keymap.set('n', '<leader>t', ':split | terminal\ni')
+vim.keymap.set('t', '<leader>t', 'exit\n')

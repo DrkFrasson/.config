@@ -1,0 +1,81 @@
+# ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
+# ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
+# <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
+
+# Keybinds -->  11
+# Aestetics -->  29
+# Window -->  50
+# System -->  69
+
+
+# Custom Keybindings -->-->-->-->-->-->-->-->-->-->-->-->-->-->
+
+# keybind = global:super+ctrl+shift+t = toggle_quick_terminal
+
+## Split window:
+keybind = shift+ctrl+p=new_split:left
+keybind = shift+ctrl+r=new_split:up
+
+### Navigation:
+keybind = alt+arrow_right=goto_split:right
+keybind = alt+arrow_left=goto_split:left
+keybind = alt+arrow_up=goto_split:up
+keybind = alt+arrow_down=goto_split:down
+
+## Tabs navigation:
+keybind = shift+ctrl+p=move_tab:-1
+keybind = shift+ctrl+n=move_tab:1
+
+# Aestetics -->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+theme = Gruber Darker
+# language = ru
+
+## Background:
+background-image = /home/derek/Imágenes/Wallpapers/hacker-terminal.png
+background-image-opacity = 0.3
+background-image-fit = cover
+background = #14161B 
+# background-opacity = 0.91
+# background-blur= true
+# background = #1D1D20 
+#                |-> GNOME HIG background color.
+
+## Cursor:
+cursor-style = block
+shell-integration-features = no-cursor
+mouse-hide-while-typing
+
+# split-divider-color = #1f1f21
+
+# Window -->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
+title = "bash"
+window-theme = ghostty
+
+window-save-state = always
+
+## Size:
+window-height = 600
+window-width = 1000
+
+## Tabs & Titlebar:
+window-show-tab-bar = auto
+gtk-tabs-location = hidden
+gtk-titlebar-style = tabs 
+#   Remove title    <-|
+# gtk-wide-tabs = false
+gtk-toolbar-style = flat
+window-subtitle = working-directory
+
+# System integration -->-->-->-->-->-->-->-->-->-->-->-->-->-->
+
+## Notifications:
+notify-on-command-finish = unfocused
+bell-features = no-title, system, audio
+bell-audio-path = ~/.config/ghostty/notification.mp3
+# bell-audio-volume = 0.0..1.0 default(0.5)
+
+# Mouse:
+mouse-scroll-multiplier = precision:0.1,discrete:3
+clipboard-paste-protection = true
+
+# ->-->-->-->-->-->-->That's the config!<--<--<--<--<--<--<--<-
