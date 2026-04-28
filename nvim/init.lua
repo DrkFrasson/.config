@@ -12,3 +12,7 @@ vim.opt.scrolloff = 10
 
 vim.keymap.set('n', '<leader>t', ':split | terminal\ni')
 vim.keymap.set('t', '<leader>t', 'exit\n')
+
+vim.keymap.set('i', '{', '{\n}<up>\n')
+vim.keymap.set('i', '(', '()<Esc>i')
+vim.keymap.set('i', '[', '[]<Esc>i')
