@@ -16,3 +16,9 @@ vim.keymap.set('t', '<leader>t', 'exit\n')
 vim.keymap.set('i', '{', '{\n}<up>\n')
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
+
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣',}
+
+vim.opt.spell = true
+vim.keymap.set('n', '<leader>st', ':set spell!\n')
