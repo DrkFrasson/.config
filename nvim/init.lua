@@ -22,3 +22,7 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣',}
 
 vim.opt.spell = true
 vim.keymap.set('n', '<leader>st', ':set spell!\n')
+
+vim.keymap.set('n', '<leader>w', ':w\n')
+vim.keymap.set('n', '<leader>q', ':q\n')
+vim.keymap.set('n', '<leader>ft', ':Ex\n')

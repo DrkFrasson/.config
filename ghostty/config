@@ -13,8 +13,8 @@
 # keybind = global:super+ctrl+shift+t = toggle_quick_terminal
 
 ## Split window:
-keybind = shift+ctrl+p=new_split:left
-keybind = shift+ctrl+r=new_split:up
+keybind = shift+ctrl+l=new_split:left
+keybind = shift+ctrl+u=new_split:up
 
 ### Navigation:
 keybind = alt+arrow_right=goto_split:right
@@ -23,8 +23,15 @@ keybind = alt+arrow_up=goto_split:up
 keybind = alt+arrow_down=goto_split:down
 
 ## Tabs navigation:
-keybind = shift+ctrl+p=move_tab:-1
-keybind = shift+ctrl+n=move_tab:1
+keybind = shift+alt+l=move_tab:-1
+keybind = shift+alt+r=move_tab:1
+
+## Commands:
+keybind = ctrl+shift+q=close_surface
+
+## Un-binding:
+keybind = alt+f4=show_on_screen_keyboard
+# |-> Didn't work the unbind: action!
 
 # Aestetics -->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
 theme = Gruber Darker
