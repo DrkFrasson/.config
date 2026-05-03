@@ -3,7 +3,6 @@ vim.g.maplocalleader = ' '
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-
 vim.opt.linebreak = true
 
 vim.opt.cursorline = true
@@ -19,6 +18,8 @@ vim.keymap.set('i', '"', '""<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
+vim.keymap.set('n', '<leader>cm', 'i/*\n/<up>\n')
+
 
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣',}
