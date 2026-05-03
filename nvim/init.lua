@@ -18,8 +18,8 @@ vim.keymap.set('i', '"', '""<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
-vim.keymap.set('n', '<leader>cm', 'i/*\n/<up>\n')
-
+vim.keymap.set('n', '<leader>mc', 'i/*\n/<up>\n') -- [M]ulti-line [C]omment
+vim.keymap.set('n', '<leader>oc', 'i// ') -- [O]ne-line [C]omment
 
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣',}
