@@ -18,6 +18,15 @@ vim.keymap.set('i', '"', '""<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
+vim.keymap.set('i', '<', '<><Esc>i')
+
+--vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
+--	patern = '*.rs',
+--	callback = function()
+--		vim.keymap.set('i', 'Vec', 'Vec<><Esc>i')
+--	end,
+--})
+
 vim.keymap.set('n', '<leader>mc', 'i/*\n/<up>\n') -- [M]ulti-line [C]omment
 vim.keymap.set('n', '<leader>oc', 'i// ') -- [O]ne-line [C]omment
 
