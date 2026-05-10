@@ -1,20 +1,20 @@
 #	     _________		    ;'''';				    ,;'''';  ,;''''';
-#       ,;ammmmmmmmmmmmma;,	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
+#       ,;ammmmmmmmmmmmma;,	   ; aAAa ;				    ; !!!! ; ; !!!!! ;
 #    ,;MMMMMMMMMMMMMMMMMMMMM;,	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
 #   ;NNNNNNNNNNNNNNNNNNNNNNNNN;	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaa ;				    ; !!! ;' ; !!! ;'
-#  ;@Mm'''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! ;
-#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa    aaa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! ;'
-#  ;@MMMm;,    'kMM'	    iN@;   ; aa ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! ;
-#  ;@MMNj'    ,iNNMMMMMMMMMMMM@;   ; aa ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; ; !! ;'
-#  ;@MM.   ,;NNNNNMMMMMMMMMMMM@;   ; aa ;,,, aa ; ; h ;,,; h ; ; h ;,,; h ; ;,,,; ;,,,;
+#  ;@Mm;''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! ;
+#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa,aaaAAa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! ;'
+#  ;@MMMm;,    'kMM'	    iN@;   ; aA ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! ;
+#  ;@MMNj'   ,aiNNNNMMMMMMMMMM@;   ; aA ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; ; !! ;'
+#  ;@MMI  ,;NNNNNNMMMMMMMMMMMM@;   ; aA ;,,, aA ; ; h ;,,; h ; ; h ;,,; h ; ;,,,; ;,,,;
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaaaaaaaa ; ; hhhhhhhh ; ; hhhhhhhh ; ,aa;  ,aa;
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;    ;,,;',,,,,,;   ';,,,,,,,;'  ';,,,,,,,;' ;aa!  ;aa!
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;
-#  '@MMMMMM@MMMMM@MMMMM@MMMMMM@; ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
-#   lNNNNNNHNNNNNHNNNNNHNNNNNNj  ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
-#    '@###@'@###@'@###@'@###@'   <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@; ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
+#  '@MMMMMM@MMMMM@MMMMM@MMMMMM@; ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
+#   lNNNNNNHNNNNNHNNNNNHNNNNNNj  <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
+#    '@###@'@###@'@###@'@###@'
 #      '''   '''   '''   '''
 
 # Keybinds -->  26
@@ -30,6 +30,8 @@
 ## Split window:
 keybind = shift+ctrl+l=new_split:left
 keybind = shift+ctrl+u=new_split:up
+keybind = shift+ctrl+r=new_split:right
+keybind = shift+ctrl+d=new_split:down
 
 ### Navigation:
 keybind = alt+arrow_right=goto_split:right
@@ -37,13 +39,12 @@ keybind = alt+arrow_left=goto_split:left
 keybind = alt+arrow_up=goto_split:up
 keybind = alt+arrow_down=goto_split:down
 
+keybind = ctrl+shift+q=close_surface
+keybind = ctrl+shift+o=toggle_tab_overview
+
 ## Tabs navigation:
 keybind = shift+alt+l=move_tab:-1
 keybind = shift+alt+r=move_tab:1
-
-## Commands:
-keybind = ctrl+shift+q=close_surface
-keybind = ctrl+shift+o=toggle_tab_overview
 
 ## Un-binding:
 keybind = alt+f4=show_on_screen_keyboard
