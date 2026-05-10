@@ -1,11 +1,26 @@
-# ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
-# ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
-# <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
+#	     _________		    ;'''';				    ,;'''';  ,;''''';
+#       ,;ammmmmmmmmmmmma;,	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
+#    ,;MMMMMMMMMMMMMMMMMMMMM;,	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
+#   ;NNNNNNNNNNNNNNNNNNNNNNNNN;	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaa ;				    ; !!! ;' ; !!! ;'
+#  ;@Mm'''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! ;
+#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa    aaa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! ;'
+#  ;@MMMm;,    'kMM'	    iN@;   ; aa ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! ;
+#  ;@MMNj'    ,iNNMMMMMMMMMMMM@;   ; aa ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; ; !! ;'
+#  ;@MM.   ,;NNNNNMMMMMMMMMMMM@;   ; aa ;,,, aa ; ; h ;,,; h ; ; h ;,,; h ; ;,,,; ;,,,;
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaaaaaaaa ; ; hhhhhhhh ; ; hhhhhhhh ; ,aa;  ,aa;
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;    ;,,;',,,,,,;   ';,,,,,,,;'  ';,,,,,,,;' ;aa!  ;aa!
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;
+#  '@MMMMMM@MMMMM@MMMMM@MMMMMM@; ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
+#   lNNNNNNHNNNNNHNNNNNHNNNNNNj  ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
+#    '@###@'@###@'@###@'@###@'   <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
+#      '''   '''   '''   '''
 
-# Keybinds -->  11
-# Aestetics -->  29
-# Window -->  50
-# System -->  69
+# Keybinds -->  26
+# Aestetics -->  52
+# Window -->  69
+# System -->  88
 
 
 # Custom Keybindings -->-->-->-->-->-->-->-->-->-->-->-->-->-->
@@ -28,6 +43,7 @@ keybind = shift+alt+r=move_tab:1
 
 ## Commands:
 keybind = ctrl+shift+q=close_surface
+keybind = ctrl+shift+o=toggle_tab_overview
 
 ## Un-binding:
 keybind = alt+f4=show_on_screen_keyboard
@@ -38,12 +54,7 @@ theme = Gruber Darker
 language = en
 
 ## Background:
-background-image = /home/derek/Imágenes/Wallpapers/hacker-terminal.png
-background-image-opacity = 0.3
-background-image-fit = cover
 background = #14161B 
-# background-opacity = 0.91
-# background-blur= true
 # background = #1D1D20 
 #                |-> GNOME HIG background color.
 
@@ -67,7 +78,7 @@ window-width = 125
 ## Tabs & Titlebar:
 window-show-tab-bar = auto
 gtk-tabs-location = hidden
-gtk-titlebar-style = tabs 
+# gtk-titlebar-style = tabs 
 #   Remove title    <-|
 # gtk-wide-tabs = false
 gtk-toolbar-style = flat
