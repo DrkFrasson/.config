@@ -1,12 +1,12 @@
-#	     _________		    ;'''';				    ,;'''';  ,;''''';
-#       ,;ammmmmmmmmmmmma;,	   ; aAAa ;				    ; !!!! ; ; !!!!! ;
-#    ,;MMMMMMMMMMMMMMMMMMMMM;,	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
-#   ;NNNNNNNNNNNNNNNNNNNNNNNNN;	   ; aaaa ;				    ; !!!! ; ; !!!!! ;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaa ;				    ; !!! ;' ; !!! ;'
-#  ;@Mm;''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! ;
-#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa,aaaAAa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! ;'
-#  ;@MMMm;,    'kMM'	    iN@;   ; aA ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! ;
-#  ;@MMNj'   ,aiNNNNMMMMMMMMMM@;   ; aA ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; ; !! ;'
+#	     _________		    ;'''';				    ,;'''';    ,;''';·.
+#       ,;ammmmmmmmmmmmma;,	   ; aAAa ;				    ; !!!! ;  / !!!!! ;
+#    ,;MMMMMMMMMMMMMMMMMMMMM;,	   ; aaaa ;				    ; !!!! ;  ; !!!!! ;
+#   ;NNNNNNNNNNNNNNNNNNNNNNNNN;	   ; aaaa ;				    ; !!!! ; / !!!!! ;
+#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaa ;				    ; !!! ;' ; !!! ;/
+#  ;@Mm;''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! /
+#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa,aaaAAa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! /
+#  ;@MMMm;,    'kMM'	    iN@;   ; aA ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! /
+#  ;@MMNj'   ,aiNNNNMMMMMMMMMM@;   ; aA ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; / !! ;
 #  ;@MMI  ,;NNNNNNMMMMMMMMMMMM@;   ; aA ;,,, aA ; ; h ;,,; h ; ; h ;,,; h ; ;,,,; ;,,,;
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaaaaaaaa ; ; hhhhhhhh ; ; hhhhhhhh ; ,aa;  ,aa;
 #  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;    ;,,;',,,,,,;   ';,,,,,,,;'  ';,,,,,,,;' ;aa!  ;aa!
@@ -39,12 +39,16 @@ keybind = alt+arrow_left=goto_split:left
 keybind = alt+arrow_up=goto_split:up
 keybind = alt+arrow_down=goto_split:down
 
-keybind = ctrl+shift+q=close_surface
-keybind = ctrl+shift+o=toggle_tab_overview
-
 ## Tabs navigation:
+keybind = ctrl+shift+o=toggle_tab_overview
+keybind = ctrl+shift+n=prompt_tab_title
 keybind = shift+alt+l=move_tab:-1
 keybind = shift+alt+r=move_tab:1
+
+## General Commands:
+keybind = ctrl+shift+s=start_search
+keybind = ctrl+shift+c=clear_screen
+keybind = ctrl+shift+q=close_surface
 
 ## Un-binding:
 keybind = alt+f4=show_on_screen_keyboard
@@ -52,6 +56,7 @@ keybind = alt+f4=show_on_screen_keyboard
 
 # Aestetics -->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->
 theme = Gruber Darker
+# theme = Adwaita Dark
 language = en
 
 ## Background:
@@ -89,9 +94,10 @@ window-subtitle = working-directory
 
 ## Notifications:
 notify-on-command-finish = unfocused
-bell-features = no-title, system, audio
-bell-audio-path = ~/.config/ghostty/notification.mp3
-bell-audio-volume = 0.25
+bell-features = no-title, system
+#, audio
+# bell-audio-path = ~/.config/ghostty/notification.mp3
+# bell-audio-volume = 0.25
 # |-> 0.0..1.0 default(0.5)
 
 # Mouse:

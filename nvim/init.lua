@@ -69,3 +69,8 @@ vim.keymap.set('n', '<leader>q', ':q<NL>')
 vim.keymap.set('n', '<leader><shift>q', ':q!<NL>')
 
 vim.keymap.set('n', '<leader>ft', ':Ex<NL>') -- [f]ile [t]ree
+
+
+
+vim.keymap.set('n', '<C-k>', ':m .-2<NL>>==') -- Moves line a line minus (up)
+vim.keymap.set('n', '<C-j>', ':m .+1<NL>>==') -- Moves line a line more (down)
