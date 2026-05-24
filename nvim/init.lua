@@ -1,12 +1,12 @@
 -->	 /·\	 |\			MMMMMMMM   MMMMMMMMM			<--
--->	/····	 NN\			  MMMM	     MMMM			<--
--->	NN····   NNN			  MMMM	   MMMMM			<--
--->	NNN····  NNN	;MMMM,	;MMM,	  MMMM   MMMMM				<--
--->	NNN ···· NNN	N    N	N   N	  MMMM MMMMM  AA   'a;,			<--
--->	NNN  ····NNN	NaaaaN	N   N	  MMMMMMMM  /nn/    000,a000,a00a,	<--
--->	NNN   ····NN	N	N   N	  MMMMMM     //    000   000   000	<--
--->	\NN    ····/	N	N   N	  MMMM      //    000   000   000	<--
--->	 \|     \·/	'NNNN?	'MMM'	  MM       /nn/  000·  000·  000·	<--
+-->	/····	 NN\			  MMMM	     MMMM'			<--
+-->	NN····   NNN			  MMMM	   MMMMM'			<--
+-->	NNN····  NNN	;MMMM,	;MMMM,	  MMMM   MMMMM'				<--
+-->	NNN ···· NNN	N    N	N    N	  MMMM MMMMM' AA   'a;,			<--
+-->	NNN  ····NNN	NaaaaN	N    N	  MMMMMMMM' /nn/    000,a000,a00a,	<--
+-->	NNN   ····NN	N	N    N	  MMMMMM'    //    000   000   000	<--
+-->	\NN    ····/	N	N    N	  MMMM'     //    000   000   000	<--
+-->	 \|     \·/	'NNNN?	'MMMM'	  MM'      /nn/  000,  000,  000,	<--
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -20,6 +20,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10 
 
 vim.keymap.set('n', '<leader>t', ':split | terminal<NL>i') -- [t]erminal
+vim.keymap.set('n', '<leader>lt', ':vsplit | terminal<NL>i') -- [l]eft [t]erminal
 vim.keymap.set('t', '<leader>t', 'exit<NL>')
 
 vim.keymap.set('n', '<leader>{{', 'i{<NL>}<up><NL>')
@@ -38,7 +39,6 @@ vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 		vim.keymap.set('i', 'Vec', 'Vec<><Esc>i')
 		vim.keymap.set('n', 'fn', 'ifn ()<NL>{<NL>}<up><NL>//<up><up><left><left> <left>') -- [f]unctio[n].
 		vim.keymap.set('n', 'pfn', 'ifn () -> :<NL>{<NL>}<up><NL>//<up><up><left><left> <left>') -- [p]arameters [f]unctio[n].
-
 	end,
 })
 
@@ -69,8 +69,6 @@ vim.keymap.set('n', '<leader>q', ':q<NL>')
 vim.keymap.set('n', '<leader><shift>q', ':q!<NL>')
 
 vim.keymap.set('n', '<leader>ft', ':Ex<NL>') -- [f]ile [t]ree
-
-
 
 vim.keymap.set('n', '<C-k>', ':m .-2<NL>>==') -- Moves line a line minus (up)
 vim.keymap.set('n', '<C-j>', ':m .+1<NL>>==') -- Moves line a line more (down)
