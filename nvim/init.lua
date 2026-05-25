@@ -31,14 +31,23 @@ vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
 vim.keymap.set('i', '<', '<><Esc>i')
 
+--> Zig Programming Language specific keybinds -->
+vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
+	pattern = '*.zig',
+	callback = function()
+		vim.keymap.set('i', '@Vec', '@Vector( , )<left><left><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'fn', 'ifn ()<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'pfn', 'ifn ():<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [p]arameters [f]unctio[n].
+	end,
+})
 
 --> Rust Programming Language specific keybinds -->
 vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 	pattern = '*.rs',
 	callback = function()
 		vim.keymap.set('i', 'Vec', 'Vec<><Esc>i')
-		vim.keymap.set('n', 'fn', 'ifn ()<NL>{<NL>}<up><NL>//<up><up><left><left> <left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'pfn', 'ifn () -> :<NL>{<NL>}<up><NL>//<up><up><left><left> <left>') -- [p]arameters [f]unctio[n].
+		vim.keymap.set('n', 'fn', 'ifn ()<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'pfn', 'ifn () -> <NL>{<NL>}<up><NL>//<up><up><left><left><left>') -- [p]arameters [f]unctio[n].
 	end,
 })
 
@@ -47,8 +56,8 @@ vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 	pattern = '*.cpp',
 	callback = function()
-		vim.keymap.set('n', 'fn', 'ivoid  ()<NL>{<NL>}<up><NL>//<up><up><left> <left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'pfn', 'iint  ()<NL>{<NL>}<up><NL>//<up><up><left><left> <left>') -- [p]arameters [f]unctio[n].
+		vim.keymap.set('n', 'fn', 'ivoid ()<NL>{<NL>}<up><NL>//<up><up><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'pfn', 'iint ()<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [p]arameters [f]unctio[n].
 	end,
 })
 
