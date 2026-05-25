@@ -35,9 +35,10 @@ vim.keymap.set('i', '<', '<><Esc>i')
 vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 	pattern = '*.zig',
 	callback = function()
+		vim.keymap.set('i', '@pan', '@panic("");<left><left><left>') -- [f]unctio[n].
 		vim.keymap.set('i', '@Vec', '@Vector( , )<left><left><left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'fn', 'ifn ()<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'pfn', 'ifn ():<NL>{<NL>}<up><NL>//<up><up><left><left>') -- [p]arameters [f]unctio[n].
+		vim.keymap.set('n', 'fn', 'ifn () noreturn {<NL>}<up><NL>//<up><up><left><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'pfn', 'ifn ()  {<NL>}<up><NL>//<up><up><left><left>') -- [p]arameters [f]unctio[n].
 	end,
 })
 
