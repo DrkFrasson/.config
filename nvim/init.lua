@@ -1,12 +1,14 @@
--->	 /·\	 |\			MMMMMMMM   MMMMMMMMM			<--
--->	/····	 NN\			  MMMM	     MMMM'			<--
--->	NN····   NNN			  MMMM	   MMMMM'			<--
--->	NNN····  NNN	;MMMM,	;MMMM,	  MMMM   MMMMM'				<--
--->	NNN ···· NNN	N    N	N    N	  MMMM MMMMM' AA   'a;,			<--
--->	NNN  ····NNN	NaaaaN	N    N	  MMMMMMMM' /nn/    000,a000,a00a,	<--
--->	NNN   ····NN	N	N    N	  MMMMMM'    //    000   000   000	<--
--->	\NN    ····/	N	N    N	  MMMM'     //    000   000   000	<--
--->	 \|     \·/	'NNNN?	'MMMM'	  MM'      /nn/  000,  000,  000,	<--
+    -->			    ,	   ,										<--
+    -->			   /·\	   |\			MMMMMMMM   MMMMMMMMM					<--
+    -->			  /····	   NN\			  MMMM	     MMMM'					<--
+    -->			  @@····   NNN			  MMMM	   MMMMM'					<--
+    -->			  @@@····  NNN	;MMMM,	;MMMM,	  MMMM   MMMMM'						<--
+    -->			  @@@ ···· NNN	N    N	N    N	  MMMM MMMMM' AA   'a;,					<--
+    -->			  @@@  ····NNN	NaaaaN	N    N	  MMMMMMMM' /mm/    000,a000,a00a,			<--
+    -->			  @@@   ····NN	N	N    N	  MMMMMM'    //    000   000   000			<--
+    -->			  \@@    ····/	N	N    N	  MMMM'     //    000   000   000			<--
+    -->			   \|     \·/	'NNNN?	'MMMM'	  MM'      /mm/  000,  000,  000,			<--
+    -->			    '	   '			  '							<--
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -17,7 +19,7 @@ vim.opt.linebreak = true
 
 vim.opt.cursorline = true
 
-vim.opt.scrolloff = 10 
+vim.opt.scrolloff = 6
 
 vim.keymap.set('n', '<leader>t', ':split | terminal<NL>i') -- [t]erminal
 vim.keymap.set('n', '<leader>lt', ':vsplit | terminal<NL>i') -- [l]eft [t]erminal
@@ -37,8 +39,8 @@ vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
 	callback = function()
 		vim.keymap.set('i', '@pan', '@panic("");<left><left><left>') -- [f]unctio[n].
 		vim.keymap.set('i', '@Vec', '@Vector( , )<left><left><left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'fn', 'ifn () noreturn {<NL>}<up><NL>//<up><up><left><left>') -- [f]unctio[n].
-		vim.keymap.set('n', 'pfn', 'ifn ()  {<NL>}<up><NL>//<up><up><left><left>') -- [p]arameters [f]unctio[n].
+		vim.keymap.set('n', 'fn', 'ifn () noreturn{<NL>}<up><ESC>o//<up><left><left><left>') -- [f]unctio[n].
+		vim.keymap.set('n', 'pfn', 'ifn () {<NL>}<up><ESC>o//<up><left><left><left>') -- [p]arameters [f]unctio[n].
 	end,
 })
 
