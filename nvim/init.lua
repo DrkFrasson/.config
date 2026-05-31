@@ -1,14 +1,14 @@
     -->			    ,	   ,										<--
     -->			   /·\	   |\			MMMMMMMM   MMMMMMMMM					<--
-    -->			  /····	   NN\			  MMMM	     MMMM'					<--
-    -->			  @@····   NNN			  MMMM	   MMMMM'					<--
-    -->			  @@@····  NNN	;MMMM,	;MMMM,	  MMMM   MMMMM'						<--
-    -->			  @@@ ···· NNN	N    N	N    N	  MMMM MMMMM' AA   'a;,					<--
-    -->			  @@@  ····NNN	NaaaaN	N    N	  MMMMMMMM' /mm/    000,a000,a00a,			<--
-    -->			  @@@   ····NN	N	N    N	  MMMMMM'    //    000   000   000			<--
-    -->			  \@@    ····/	N	N    N	  MMMM'     //    000   000   000			<--
+    -->			  /····	   NN\			  MMMM	    ,MMMM'					<--
+    -->			  @@····   NNN			  MMMM	  ,MMMMM'					<--
+    -->			  @@@····  NNN	;MMMM,	;MMMM,	  MMMM  ,MMMMM'						<--
+    -->			  @@@ ···· NNN	N    N	M    M	  MMMM,MMMMM' AA   'am,					<--
+    -->			  @@@  ····NNN	NeeeeN	M    M	  MMMMMMMM' /mm/    000,a000,a00a,			<--
+    -->			  @@@   ····NN	N	M    M	  MMMMMM'    //    000   000   000			<--
+    -->			  \@@    ····/	N	M    M	  MMMM'     //    000   000   000			<--
     -->			   \|     \·/	'NNNN?	'MMMM'	  MM'      /mm/  000,  000,  000,			<--
-    -->			    '	   '			  '							<--
+    -->			    '	   '			  							<--
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
