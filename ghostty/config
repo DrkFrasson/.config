@@ -1,26 +1,23 @@
-#	     _________		    ;'''';				    ,;'''';    ,;''';·.
-#       ,;ammmmmmmmmmmmma;,	   ; aAAa ;				    ; !!!! ;  / !!!!! ;
-#    ,;MMMMMMMMMMMMMMMMMMMMM;,	   ; aaaa ;				    ; !!!! ;  ; !!!!! ;
-#   ;NNNNNNNNNNNNNNNNNNNNNNNNN;	   ; aaaa ;				    ; !!!! ; / !!!!! ;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaa ;				    ; !!! ;' ; !!! ;/
-#  ;@Mm;''lNMMMMMMMMMMMMMMMMMM@;   ; aaa ,;''';,   ,;''''''';,  ,;''''''';, ; !!! ; ; !!! /
-#  ;@MMa,   'lMMMMMMMMMMMMMMMM@;   ;, aa,aaaAAa ; ; hhhhhhhh ; ; hhhhhhhh ; ; !! ; ; !!! /
-#  ;@MMMm;,    'kMM'	    iN@;   ; aA ''''; a ; ; h ;''; h ; ; h ;''; h ; ; !! ; ; !! /
-#  ;@MMNj'   ,aiNNNNMMMMMMMMMM@;   ; aA ;   ; a ; ; h ;  ; h ; ; h ;  ; h ; ; !!; / !! ;
-#  ;@MMI  ,;NNNNNNMMMMMMMMMMMM@;   ; aA ;,,, aA ; ; h ;,,; h ; ; h ;,,; h ; ;,,,; ;,,,;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;   ; aaaaaaaaaa ; ; hhhhhhhh ; ; hhhhhhhh ; ,aa;  ,aa;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;    ;,,;',,,,,,;   ';,,,,,,,;'  ';,,,,,,,;' ;aa!  ;aa!
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@;
-#  ;@MMMMMMMMMMMMMMMMMMMMMMMMM@; ->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->->
-#  '@MMMMMM@MMMMM@MMMMM@MMMMMM@; ->-->-->-->-->--> Ghostty's config file. <--<--<--<--<--<--<-
-#   lNNNNNNHNNNNNHNNNNNHNNNNNNj  <-<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<--<-
-#    '@###@'@###@'@###@'@###@'
-#      '''   '''   '''   '''
+#
+#		    .;aM@@@@@@Ma;,   ;@;			       ;@;     ;@;
+#		   ;M;'        ';M;  ;@;			       ;@;     ;@;
+#		  ;M$	        ;MN  ;@;			       ;@;     ;@;
+#		  ;M;		     ;@;			     MMMMMMM MMMMMMM
+#		  ;M;		     ;@;			       ;@;     ;@;
+#		  ;M;	MMMMMMMMMM;  ;@MMMM@@;,  ,;@@@@@;,  ,;@@@@@a;  ;@;     ;@;   ;@;    ;@;
+#		  ;M;		;M;  ;@;    ;@;  ;@;   ;@;  ;@;        ;@;     ;@;   ;@;    ;@;
+#		  ;M;		;M;  ;@;    ;@;  ;@;   ;@;  ';@;,,     ;@;     ;@;   ;@;    ;@;
+#		  ;M;		;M;  ;@;    ;@;  ;@;   ;@;     ''';@;  ;@;     ;@;   ;@;    ;@;
+#		   :M;,	      ,aMMM  ;@;    ;@;  ;@;   ;@;        ;@;  ;@;     ;@;   ;@;,   ;@;
+#		    ':NM@@@@@M;' MM  ;@;    ;@;  ';@@@@@;'  ;N@@@@@;'  ';@@;   ';@@;  ';@@@@@@;
+#											    ;@;
+#											   ,;@;
+#										     ;@@@@@@;'
 
-# Keybinds -->  26
-# Aestetics -->  52
-# Window -->  69
-# System -->  88
+# Keybinds -->  23
+# Aestetics -->  55
+# Window -->  72
+# System -->  91
 
 
 # Custom Keybindings -->-->-->-->-->-->-->-->-->-->-->-->-->-->
@@ -49,6 +46,7 @@ keybind = shift+alt+r=move_tab:1
 keybind = ctrl+shift+s=start_search
 keybind = ctrl+shift+c=clear_screen
 keybind = ctrl+shift+q=close_surface
+keybind = ctrl+alt+r=reset
 
 ## Un-binding:
 keybind = alt+f4=show_on_screen_keyboard
@@ -94,14 +92,13 @@ window-subtitle = working-directory
 
 ## Notifications:
 notify-on-command-finish = unfocused
-bell-features = no-title, system
-#, audio
+bell-features = system,no-audio,attention,no-title,no-border
 # bell-audio-path = ~/.config/ghostty/notification.mp3
 # bell-audio-volume = 0.25
 # |-> 0.0..1.0 default(0.5)
 
 # Mouse:
-mouse-scroll-multiplier = precision:0.1,discrete:3
+# mouse-scroll-multiplier = precision:0.1,discrete:3
 clipboard-paste-protection = true
 
 # ->-->-->-->-->-->-->That's the config!<--<--<--<--<--<--<--<-
