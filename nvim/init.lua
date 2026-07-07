@@ -10,6 +10,13 @@
     -->			   \|     \·/	'NNNN?	'MMMM'	  MM'      /mm/  000,  000,  000,			<--
     -->			    '	   '			  							<--
 
+    --> NeoVim Options: 18
+    --> NeoVim Keybids: 37
+    --> Language-specific Keybids: 68
+
+
+    -->-->-->-->-->-->    NeoVim Options    <--<--<--<--<--<--
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -26,38 +33,46 @@ vim.opt.listchars = { tab = '▏ ', trail = '·', nbsp = '␣',} -- nl = '↩'} 
 
 vim.opt.spell = false
 vim.opt.spelllang = es
+
     -->-->-->-->-->-->    NeoVim Keybids    <--<--<--<--<--<--
 
-vim.keymap.set('n', '<C-t>', ':split | terminal<NL>i') -- [t]erminal
-vim.keymap.set('n', 't', ':vsplit | terminal<NL>i') -- Left [t]erminal
-vim.keymap.set('t', '<C-t>', 'exit<NL>') -- Close [t]erminal
+vim.keymap.set('n', '<C-t>', ':split | terminal<NL>i') --> [t]erminal
+vim.keymap.set('n', '<M-t>', ':vsplit | terminal<NL>i') --> Left [t]erminal
+vim.keymap.set('t', '<C-t>', 'exit<NL>') --> Close [t]erminal
 
--- vim.keymap.set('n', '<leader>{{', 'i{<NL>}<up><NL>')
-
+vim.keymap.set('i', '\'', '\'\'<Esc>i')
 vim.keymap.set('i', '"', '""<Esc>i')
 vim.keymap.set('i', '{', '{}<Esc>i')
 vim.keymap.set('i', '(', '()<Esc>i')
 vim.keymap.set('i', '[', '[]<Esc>i')
 vim.keymap.set('i', '<', '<><Esc>i')
 
-vim.keymap.set('n', '<leader>mc', 'i/*<NL>/<up><NL>') -- [M]ulti-line [C]omment
-vim.keymap.set('n', '<leader>oc', 'i// ') -- [O]ne-line [C]omment
+vim.keymap.set('n', '<leader>mc', 'i/*<NL>/<up><NL>') --> [m]ulti-line [c]omment
 
-vim.keymap.set('n', '<leader>st', ':set spell!<NL>') -- [s]pell [t]oggle
+vim.keymap.set('n', '<C-s>', ':set spell!<NL>') --> [s]pell [t]oggle
 
-vim.keymap.set('v', '<leader>y', ':y+<NL>') -- Copy to system's clipboard.
+vim.keymap.set('v', '<leader>y', ':y+<NL>') --> Copy to system's clipboard.
 
-vim.keymap.set('n', '<leader>w', ':w<NL>')
-vim.keymap.set('n', '<C-w>', ':w!<NL>')
+vim.keymap.set('n', '<C-w>', ':w<NL>') --> [w]rite file.
+vim.keymap.set('n', '<M-w>', ':w!<NL>') --> [w]rite file [!]
 
-vim.keymap.set('n', '<leader>q', ':q<NL>')
-vim.keymap.set('n', '<C-q>', ':q!<NL>')
+vim.keymap.set('n', '<C-q>', ':q<NL>') --> [q]uit.
+vim.keymap.set('n', '<M-q>', ':q!<NL>') --> [q]uit [!]
+vim.keymap.set('n', '<M-C-Q>', ':qa!<NL>') --> [q]uit [a]ll [!]
 
-vim.keymap.set('n', '<C-f>', ':Ex<NL>') -- [f]ile [t]ree
+vim.keymap.set('n', '<C-f>', ':Ex<NL>') --> [f]ile tree
 
 vim.keymap.set('n', '<C-k>', ':m .-2<NL>>==') -- Moves line a line minus (up)
 vim.keymap.set('n', '<C-j>', ':m .+1<NL>>==') -- Moves line a line more (down)
 
+vim.api.nvim_create_autocmd('TextYankPost', {
+	group = vim.api.nvim_create_augroup('highlight yank', { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+})
+
+    -->-->-->-->-->  Language-specific Keybids <--<--<--<--<--
 
 --> Zig Programming Language specific keybinds -->
 vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
